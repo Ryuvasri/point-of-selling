@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skincare POS System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <h1>SkinCare POS System</h1>
+  </div>
+
+  <div class="container">
+
+    <div class="sidebar-left">
+      <ul>
+        <li><a href="#serum">Serum</a></li>
+        <li><a href="#cream">Cream</a></li>
+        <li><a href="#gel">Gel</a></li>
+        <li><a href="#mask">Mask</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+
+      <!-- Serum Section -->
+      <!-- Serum Section -->
+      <div id="serum" class="product-section">
+        <h2>Serum</h2>
+        <div class="arrange">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100" alt="Vitamin C Serum">
+            <h3>Vitamin C Serum</h3>
+            <p class="price" >Price: ₹499</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100x100.png?text=Hyaluronic" alt="Hyaluronic Acid Serum">
+            <h3>Hyaluronic Acid Hydrating Serum</h3>
+            <p class="price">Price: ₹549</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100x100.png?text=Niacinamide" alt="Niacinamide Serum">
+            <h3>Niacinamide Blemish Serum</h3>
+            <p class="price">Price: ₹399</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100x100.png?text=Retinol" alt="Retinol Serum">
+            <h3>Retinol Anti-Aging Serum</h3>
+            <p class="price">Price: ₹599</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cream Section -->
+      <div id="cream" class="product-section">
+        <h2>Cream</h2>
+        <div class="arrange">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100" alt="Hydrating Cream">
+            <h3>Hydrating Cream</h3>
+            <p class="price">Price: ₹699</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100x100.png?text=Night+Cream" alt="Night Repair Cream">
+            <h3>Night Repair Cream</h3>
+            <p class="price">Price: ₹749</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100x100.png?text=Sunscreen+Cream" alt="Sunscreen Cream">
+            <h3>Sunscreen Protection Cream</h3>
+            <p class="price">Price: ₹599</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100x100.png?text=Brightening+Cream" alt="Brightening Cream">
+            <h3>Brightening Day Cream</h3>
+            <p class="price">Price: ₹649</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gel Section -->
+      <div id="gel" class="product-section">
+        <h2>Gel</h2>
+        <div class="arrange">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100" alt="Aloe Vera Gel">
+            <h3>Aloe Vera Gel</h3>
+            <p class="price">Price: ₹299</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100x100.png?text=Salicylic+Gel" alt="Salicylic Acid Gel">
+            <h3>Salicylic Acid Gel</h3>
+            <p class="price">Price: ₹349</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100x100.png?text=Green+Tea+Gel" alt="Green Tea Gel">
+            <h3>Green Tea Gel</h3>
+            <p class="price">Price: ₹379</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mask Section -->
+      <div id="mask" class="product-section">
+        <h2>Mask</h2>
+        <div class="arrange">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100" alt="Clay Mask">
+            <h3>Clay Mask</h3>
+            <p class="price">Price: ₹349</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100x100.png?text=Charcoal+Mask" alt="Charcoal Face Mask">
+            <h3>Charcoal Detox Mask</h3>
+            <p class="price">Price: ₹399</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+          <div class="product-card">
+            <img src="https://via.placeholder.com/100x100.png?text=Hydrating+Mask" alt="Hydrating Sheet Mask">
+            <h3>Hydrating Sheet Mask</h3>
+            <p class="price">Price: ₹199</p>
+            <input type="number" value="1" min="1">
+            <button onclick="addToBill(this)">Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="sidebar-right">
+      <h3>Billing</h3>
+      <div id="billList" class="bill-list">
+        <p>No items added</p>
+      </div>
+      <p id="total">Total: ₹0</p>
+      <button onclick="placeOrder()">Place Order</button>
+<p id="orderStatus"></p>
+    </div>
+
+  </div>
+
+</body>
+<script>
+  const billItems = {};
+
+  function addToBill(button) {
+    const card = button.closest(".product-card");
+    const name = card.querySelector("h3").innerText;
+    const priceText = card.querySelector(".price").innerText;
+    const price = parseInt(priceText.replace("Price:", "").replace("₹", "").trim());
+    const qty = parseInt(card.querySelector("input").value);
+
+    if (billItems[name]) {
+      billItems[name].qty += qty;
+    } else {
+      billItems[name] = { price: price, qty: qty };
+    }
+
+    updateBill();
+  }
+
+  function updateBill() {
+    const billDiv = document.getElementById("billList");
+    billDiv.innerHTML = "";
+
+    let total = 0;
+    for (const item in billItems) {
+      const itemTotal = billItems[item].price * billItems[item].qty;
+      total += itemTotal;
+
+      const div = document.createElement("div");
+      div.className = "bill-item";
+      div.innerText = `${item} (x${billItems[item].qty}) - ₹${itemTotal}`;
+      billDiv.appendChild(div);
+    }
+
+    if (total === 0) {
+      billDiv.innerHTML = "<p>No items added</p>";
+    }
+
+    document.getElementById("total").innerText = `Total: ₹${total}`;
+  }
+  function placeOrder() {
+  if (Object.keys(billItems).length === 0) {
+    alert("No items in the bill!");
+    return;
+  }
+
+  document.getElementById("orderStatus").innerText = "Order placed successfully!";
+  document.getElementById("orderStatus").style.color = "green";
+}
+
+</script>
+
+</html>
